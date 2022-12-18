@@ -4,9 +4,120 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fresca&family=Orbitron&family=Pacifico&family=Rokkitt:wght@200&display=swap"
+        rel="stylesheet">
+        <script src="script.js"></script>
     <title>rsschool-cv-html</title>
 </head>
 <body>
+    <header>
+        <div class="container">
+            <div class="foto"><img src="assets/img/avaMain.png" width="270" height="270" alt="my ava" class="round"></div>
+            <div class="info">
+                <div class="naming">
+                    <div class="fio">
+                    <h1>Alexey Buchko</h1>
+                    </div>
+                    <div class="work">
+                        <h2>FRONT-END DEVELOPER</h2>
+                    </div>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                        <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+                        <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                        <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+                        <li class="nav-item"><a href="#courses" class="nav-link">Courses</a></li>
+                        <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="contacts" id="contacts">
+              <ul class="nav-contacts">
+                <li>
+                    <div><img src="assets/icons/phone.svg" alt="phone" width="20"><a href="tel:+375297569638">+375297569638</a></div>
+                </li>
+                <li>
+                    <div><img src="assets/icons/email.svg" alt="email" width="20"><a href="mailto:alex.buchko.m@gmail.com">alex.buchko.m@gmail.com</a></div>
+                </li>
+                <li>
+                    <div><img src="assets/icons/location.svg" width="20" alt="location"><span>Minsk, Republic Belarus</span></div>
+                </li>
+                <li>
+                    <div><img src="assets/icons/github.svg" width="20" alt="github"><a href="https://github.com/1exz">github</a></div>
+                </li>
+                <li>
+                    <div><img src="assets/icons/telegram.svg" width="20" alt="telegram"><a href="https://t.me/1exz">telegram</a></div>
+                </li>
+                <li>
+                    <div><img src="assets/icons/skype.svg" width="20" alt="skype"><a href="skype:1exz" target="_blank">Skype</a></div>
+                </li>
+              </ul>
+
+            </div>
+            <div class="section">
+                <section class="section-summary" id="summary"><h2>Summary</h2>
+                    <p>I’m currently employed as a CCTV electrician in Minsk. But I decided to change my life and
+                        started to
+                        study JavaScript last year. I like coding and strive for professional development. I’m
+                        goal-oriented
+                        and hard-working person. I eager to improve my developer skills and have a passion for building
+                        high-class products.</p></section>
+                <section class="section-skills" id="skills"><h2>Skills</h2>
+                    <ul class="skills-list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript (Basic)</li>
+                    <li>Git, GitHub</li>
+                    <li>VS Code</li>
+                    <li>Angular(Basic)</li>
+                   </ul>
+                </section>
+                <section class="section-code" id="code"><h2>Code example</h2><p>Array KATA from CODEWARS: You are given two sorted arrays that both only contain integers. Your task
+                    is to find a way to merge them into a single one, sorted in asc order. Complete the function
+                    mergeArrays(arr1, arr2), where arr1 and arr2 are the original sorted arrays. You don't need to worry
+                    about validation, since arr1 and arr2 must be arrays with 0 or more Integers. If both arr1 and arr2
+                    are empty, then just return an empty array. Note: arr1 and arr2 may be sorted in different orders.
+                    Also arr1 and arr2 may have same integers. Remove duplicated in the returned result.</p>
+                 <div class="codewars">
+                    <p>function mergeArrays(arr1,arr2) {&nbsp;&nbsp;&nbsp;&nbsp;return Array.from(new
+                    Set(arr1.concat(arr2).sort((a,b)=&gt;a-b))) }</p>      
+                </div>
+                 </section>
+                <section class="section-courses" id="courses">
+                    <h2>Professional Courses/Masterclasses:</h2>
+                    <ul class="courses-list">
+                        <li>Website development basic BELHARD autumn 2021</li>
+                        <li>HTML CSS online Masterclass  autumn 2021.</li>
+                        <li>JavaScript web application development (Angular) IT-academy
+                            autumn 2021 - spring 2022</li>
+                    </ul>
+                </section>
+                <section class="section-languages" id="languages">
+                    <h2>Languages:</h2>
+                    <ul class="languages-list">
+                        <li>English Pre-Intermediate</li>
+                        <li> Belarusian\Russian Native</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container" id="footer">
+            <div class="footerDiv"><a href="https://github.com/1exz"><img src="assets/icons/github.svg" alt="gitgub logo" width="50" height="15"></a></div>
+            <div class="year" ><p>© 2022</p></div>
+            <div class="rsLogo"><a href="https://rs.school/js/"><img src="https://rs.school/images/rs_school_js.svg" alt="RS Logo" width="75" height="15"></a></div>
+        </div>
+    </footer>
 </body>
 </html>
